@@ -2,7 +2,7 @@
     require '../includes/funciones.php';
     $auth = estaAutenticado();
     
-    if($auth) {
+    if(!$auth) {
         header('Location: /');
     }
 
